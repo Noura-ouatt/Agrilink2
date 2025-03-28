@@ -61,9 +61,6 @@ main{
 /* .cover_box .active-popup {
 transform: scale(1);
 } */
-.cover_box .active{
-height: 100vh;
-}
 
 .cover_box .form-box {
     width: 100%;
@@ -74,21 +71,12 @@ height: 100vh;
     transition: transform .50s ease;
 }
 
-.cover_box.active .form-box.login{
-    transition: none;
-    transform: translateX(-400px);
-}
-
 .cover_box .form-box.register {
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
 
-.cover_box.active .form-box.register {
-    transition: transform .50s ease;
-    transform: translateX(0);
-}
 
 /* .cover_box .icon-close {
     position: absolute;
