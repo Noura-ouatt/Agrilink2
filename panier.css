@@ -485,9 +485,10 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
         .container {
             flex-direction: column;
             align-items: center;
+            flex-wrap: wrap;
         }
         .sidebar {
-            width: 90%;
+            width: 40%;
             margin: 0;
         }
         #root {
@@ -502,15 +503,16 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
         }
         .cart-item{
             width: 90%;
+
         }
         .box{
-            width: 90%;
+            width: 40%;
         }
         .img-box{
-            width: 100%;
+            width: 30%;
         }
         .images{
-            width: 100%;
+            width: 50%;
             height: 100%;
         }
         .row-img{
@@ -578,5 +580,12 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
         .copy h3 {
             font-size: 1.5rem;
         }
+        .copy h3 span {
+            font-size: 1.5rem;
+        }
+        .copy h3 span:hover {
+            color: #fff;
+        }
+       
         
     }
