@@ -506,13 +506,21 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
 
         }
         .box{
-            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid transparent;
+            border-radius: 16px;
+            padding: 15px;
+            background: white;
+            width: 100%;
         }
         .img-box{
             width: 90%;
         }
         .images{
-            width: 90%;
+            width: 100%;
             height: 100%;
         }
         .row-img{
