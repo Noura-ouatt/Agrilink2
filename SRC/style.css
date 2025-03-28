@@ -748,7 +748,7 @@ gap: 20px;
     .info {
         display: flex;
         flex-direction: column-reverse;
-    gap: 20px;
+         gap: 20px;
         justify-content: space-around;
         align-items: center;
         margin-top: 30px;

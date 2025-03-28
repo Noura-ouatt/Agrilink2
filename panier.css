@@ -617,7 +617,7 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
             font-size: 12px;
         }
         
-        .info {
+        .info-footer {
             display: flex;
             flex-direction: column-reverse;
         gap: 20px;
