@@ -41,6 +41,7 @@ main{
     flex-direction: row-reverse;
     border: 1px solid #c9c8c8;
     margin: 40px auto;
+    height: 100vh;
 }
 .se_connecter img {
     width: 100%;
