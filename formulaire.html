@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-color  h-screen flex justify-center items-center">
+    <div class="w-[350px] bg-white border rounded-xl p-6 shadow-lg">
+        <div class="flex justify-center mb-4">
+            <button id="connexion" class="text-lg font-semibold text-green-800 border-b-2 border-green-800 px-4 py-2">Se connecter</button>
+            <button id="inscription" class="text-lg font-semibold text-gray-500 px-4 py-2">S'inscrire</button>
+        </div>
+
+        <!-- Formulaire de connexion -->
+        <div id="formulaire-connexion">
+            <h1 class="text-2xl font-bold text-gray-800 text-center pb-4">Connexion</h1>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="email-connexion" class="block text-gray-700">E-mail :</label>
+                    <input type="email" id="email" name="email" class="input border border-black rounded-xl" required>
+                </div>
+                <div class="mb-4">
+                    <label for="motdepasse-connexion" class="block text-gray-700">Mot de passe :</label>
+                    <input type="password" id="motdepasse-connexion" name="motdepasse" class="champ-input border border-black rounded-xl" required>
+                </div>
+                <div class="flex justify-center">
+                   <a href="index1.html"><button class="bg-green-700 text-white py-2 px-4" >Se connecter</button></a> 
+                </div>
+            </form>
+            <div class="mt-4 text-center">
+                <p class="text-gray-600 text-sm">Pas encore de compte ? 
+                    <a href="#" id="afficher-inscription" class="text-green-800 font-semibold hover:underline">S'inscrire</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Formulaire d'inscription (caché par défaut) -->
+        <div id="formulaire-inscription" class="hidden">
+            <h1 class="text-2xl font-bold text-gray-800 text-center pb-4">Inscription</h1>
+           <div class="mb-4">
+                    <label class="block text-gray-700">Vous êtes :</label>
+                    <div class="flex gap-4 mt-2">
+                        <label class="flex items-center">
+                            <input type="radio" name="role" value="vendeur" class="mr-2" required>
+                            Vendeur
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="role" value="acheteur" class="mr-2" required>
+                            Acheteur
+                        </label>
+                    </div>
+                </div>
+            <form action="#" method="POST">
+                <div class="mb-4">
+                    <label for="prenom" class="block text-gray-700">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" class="champ-input border border-black rounded-xl" required>
+                </div>
+                <div class="mb-4">
+                    <label for="nom" class="block text-gray-700">Nom :</label>
+                    <input type="text" id="nom" name="nom" class="champ-input bg-tansparent border border-black rounded-xl" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">E-mail :</label>
+                    <input type="email" id="email" name="email" class="champ-input border border-black rounded-xl" required>
+                </div>
+                <div class="mb-4">
+                    <label for="motdepasse" class="block text-gray-700">Mot de passe :</label>
+                    <input type="password" id="motdepasse" name="motdepasse" class="champ-input border border-black rounded-xl" required>
+                </div>
+                <div class="mb-4">
+                    <label for="confirmation-motdepasse" class="block text-gray-700">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirmation-motdepasse" name="confirmation-motdepasse" class="champ-input border border-black rounded-xl" required>
+                </div>
+                <div class="flex justify-center">
+                    <button class="bg-green-700 text-white py-2 px-4">S'inscrire</button>
+                </div>
+            </form>
+            <div class="mt-4 text-center">
+                <p class="text-gray-600 text-sm">Déjà inscrit ? 
+                    <a href="#" id="afficher-connexion" class="text-green-800 font-semibold rounded-2xl hover:underline">Se connecter</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

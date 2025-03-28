@@ -1,0 +1,545 @@
+/* ============================ */
+/* Styles Généraux */
+/* ============================ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ============================ */
+/* Navigation */
+/* ============================ */
+/* L'en-tête */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+/* Navigation */
+header .navigation {
+    display: flex;
+    align-items: center;
+}
+
+header .navigation ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+header .navigation ul li {
+    margin: 0 5px;
+}
+
+header .navigation ul li a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* Effet de soulignement */
+header .navigation ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    transform-origin: 50% 50%;
+    transform: scaleX(0);
+    transition: transform .5s;
+    background: linear-gradient(to right, #fff, #f3f3ff);
+}
+
+header .navigation ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Bouton Connexion */
+header .navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: #4a6e43;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    padding: 10px 5px;
+}
+
+header .navigation .btnLogin-popup:hover {
+    background: #507949;
+}
+
+/* Menu burger */
+.check-btn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    header .navigation ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #507949;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    header .navigation ul li {
+        margin: 20px 0;
+    }
+
+    header .navigation ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    #check:checked ~ .navigation ul {
+        left: 0;
+    }
+}
+
+/* ============================ */
+/* HERO */
+/* ============================ */
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #4a6e43;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fade-in 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* ============================ */
+/* Sections */
+/* ============================ */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    max-width: 1100px;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    width: 450px;
+    height: auto;
+    border-radius: 50% 40% 60% 30%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image img:hover {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+/* ============================ */
+/* FOOTER */
+/* ============================ */
+footer {
+    padding: 100px;
+    background-color: #4a6e43;
+    text-align: center;
+    color: white;
+}
+
+.logo_nom img {
+    max-width: 300px;
+}
+
+.premier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 44px;
+}
+
+.deuxieme {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-section img {
+    max-width: 40px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons i {
+    font-size: 25px;
+}
+
+.copy {
+    background: #507949;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ============================ */
+/* Responsive Footer */
+/* ============================ */
+@media screen and (max-width: 640px) {
+    .premier {
+        flex-direction: column;
+    }
+
+    .deuxieme {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .info {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+} /* Bouton Menu Burger */
+.check-btn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Cache la case à cocher */
+#check {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #507949;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Affiche le menu quand on coche la case */
+    #check:checked ~ .navigation ul {
+        left: 0;
+    }
+}
+/* Bouton Menu Burger */
+.check-btn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Cache la case à cocher */
+#check {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #507949;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Affiche le menu quand on coche la case */
+    #check:checked ~ .navigation ul {
+        left: 0;
+    }
+}
+/* Bouton Menu Burger */
+.check-btn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Cache la case à cocher */
+#check {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #507949;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Affiche le menu quand on coche la case */
+    #check:checked ~ .navigation ul {
+        left: 0;
+    }
+}
+/* Bouton Menu Burger */
+.check-btn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Cache la case à cocher */
+#check {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #507949;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Affiche le menu quand on coche la case */
+    #check:checked ~ .navigation ul {
+        left: 0;
+    }
+}/* Bouton Menu Burger */
+.check-btn {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* Cache la case à cocher */
+#check {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 858px) {
+    .check-btn {
+        display: block;
+    }
+
+    .navigation ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 60%;
+        height: 100vh;
+        background: #507949;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+        padding: 20px 0;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .navigation ul li {
+        margin: 20px 0;
+    }
+
+    .navigation ul li a {
+        font-size: 20px;
+        color: white;
+    }
+
+    /* Affiche le menu quand on coche la case */
+    #check:checked ~ .navigation ul {
+        left: 0;
+    }
+}

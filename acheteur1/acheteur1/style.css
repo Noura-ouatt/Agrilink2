@@ -1,0 +1,105 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"); /* Image de champs verts luxuriants */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header,
+main,
+footer {
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 40%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #2e7d32;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #e8f5e9;
+}
+
+.produit-form,
+.Liste-produit {
+  margin-bottom: 30px;
+}
+
+form {
+  display: grid;
+  gap: 15px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 50%;
+  text-align: center;
+  margin: auto auto;
+}
+
+button:hover {
+  background-color: #388e3c;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+input {
+  height: 30px;
+  width: 500px;
+  border-radius: 16px;
+}
+select {
+  height: 40px;
+  width: 500px;
+  border-radius: 16px;
+
+}
+footer {
+  text-align: center;
+}

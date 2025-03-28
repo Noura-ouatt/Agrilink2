@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Vendeur - Commercialisation Produits Agricoles</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur la page Vendeur</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Nos Produits</a></li>
+          <li><a href="#">Ajouter un Produit</a></li>
+          <li><a href="#">Se Déconnecter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="produit-form">
+        <h2>Ajouter un Nouveau Produit</h2>
+        <form id="produitForm">
+          <label for="Nomproduit">Nom du Produit:</label>
+          <input type="text" id="Nomproduit" name="Nomproduit" required />
+
+          <label for="p">Catégorie:</label>
+          <select id="Categorieproduit" name="Categorieproduit">
+            <option value="fruits">Fruits</option>
+            <option value="légumes">Légumes</option>
+            <option value="céréales">Céréales</option>
+            <option value="autres">Tubercules</option>
+          </select>
+
+          <label for="Quantitéproduit">Quantité (en kg):</label>
+          <input
+            type="number"
+            id="Quantitéproduit"
+            name="Quantitéproduit"
+            required
+          />
+
+          <label for="Prixproduit">Prix Unitaire (par kg):</label>
+          <input
+            type="number"
+            id="Prixproduit"
+            name="Prixproduit"
+            step="1"
+            required
+          />
+
+          <button type="submit">Ajouter le Produit</button>
+        </form>
+      </section>
+
+      <section class="Liste-produit">
+        <h2>Liste de mes Produits</h2>
+        <table id="produitTable">
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Catégorie</th>
+              <th>Quantité</th>
+              <th>Prix Unitaire</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Les produits seront ajoutés ici dynamiquement -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Commercialisation de Produits Agricoles</p>
+    </footer>
+
+    <script src="script1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #efece7;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 15px;
+    background-color: #507949;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.list_de_droite {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.burger-menu {
+    display: none; /* Caché sur les grands écrans */
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.agri {
+    color: #994448;
+    font-size: 20px;
+font-weight: 200;
+}
+
+#logo_nom {
+    display: flex;
+    gap: 20px;
+}
+
+.list_de_droite{
+    display: flex;
+    gap: 25px;
+    margin-right: 16px;
+}
+.list_de_droite li {
+    padding: 12px;
+}
+#accueil {
+    background: #F6E6D1;
+    border-radius: 12px;
+}
+#connexion{
+    background: #507949;
+    border-radius: 12px;
+    color: white;
+}
+ul {
+    list-style: none;
+}
+.header{
+    height: 80px;
+    width: 70%;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: #994448;
+}
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: #507949;
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #507949;
+    color: white;
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.head{
+    background-color: #507949 ;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    padding: 15px;
+    background: white;;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 250px;
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+    background: rgba(239, 234, 234, 0.418);
+    box-shadow: 1 1 5px rgba(0, 0, 0, 0.091);
+    transition: 0.25s;
+    border-radius: 18px;
+}
+
+.images:hover {
+    transform: scale(0.95);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 110px;
+}
+h2{
+    font-size: 16px;
+    color: #da7c81;
+}
+button{
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    background-color: #507949;
+    padding: 7px 20px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #22391e;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #507949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+.suivant {
+    display: flex;
+    gap: 16px;
+    font-size: 24px;
+    list-style: none;
+    justify-content: center;
+   text-decoration: none;
+}
+
+footer{  background:linear-gradient(#efece7,#4a6e43 );
+    padding: 100px;
+    margin: 0;
+    padding: 0;}
+    
+    .logo_nom img {
+        max-width: 300px;
+    
+    }
+    
+    .premier{
+        display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 44px;
+        
+    }
+    .deuxieme{
+        display: flex;
+    gap: 40px;
+    
+    
+    }
+
+    footer{
+        width: 100%;
+    }
+    
+    .footer-section img{
+    max-width: 40px;
+    }
+    .h {
+        font-weight: 300;
+    }
+    .fa-square-x-twitter {
+        color: black;
+        font-size: 25px;
+    }
+    .fa-square-instagram{
+        color: rgb(218, 122, 178);
+        font-size: 25px;
+    }
+    .fa-facebook{
+        color: rgb(71, 113, 169);
+        font-size: 25px;
+    }
+    .fa-square-whatsapp{
+        color: rgb(107, 181, 107);
+        font-size: 25px;
+    }
+    .logo{
+     display: flex;
+     gap: 30px;
+     justify-content: center;
+     align-self: center;
+    }
+    footer p {
+        color: rgb(244, 243, 243);
+        line-height: 30px;
+        font-size: 20px;
+    }
+    h3{
+        color: #507949;
+        font-size: 22px;
+    }
+    .info {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       
+    
+    }
+    .copy {
+        background: #507949;
+        text-align: center;
+        color: #153b0f;
+        padding: 30px;
+        margin: 0;
+    }
