@@ -14,14 +14,14 @@ function desactivateCoverBox(){
     cover_box.classList.remove('active');
 }
 
-// function activatePopup(){
-// if(cover_box.style.transform != 'scale(0)'){
-//    cover_box.style.transform = 'scale(0)';
-// }
-// else{
-//   cover_box.style.transform = 'scale(1)';
+function activatePopup(){
+if(cover_box.style.transform != 'scale(0)'){
+   cover_box.style.transform = 'scale(0)';
+}
+else{
+  cover_box.style.transform = 'scale(1)';
 
-// }}
+}}
 
 
 

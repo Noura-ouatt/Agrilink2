@@ -3,40 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se Connecter ou s'enregistrer</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Login and registration</title>
+    <link rel="stylesheet" href="SRC/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-<nav class="navigation">
-
-    <input type="checkbox" id="check" title="Menu Toggle">
-    <label for="check" class="check-btn">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-
-    <label for="logo" class="logo">Agrilink</label>
-    
-    <ul>
-        <li><a href="index.html" alt ="">Accueil</a></li>
-        <li><a href="#" alt ="">A propos</a></li>
-        <li><a href="produit.html" alt ="">Nos produits</a></li>
-        <li><a href="login.html"></a><button class="btnLogin-popup" title="Login" type="button">Se connecter</button></li>
-    </ul>
-</nav>
-  </header>
+  
 
 <!-- login -->
 <main>
 <div class="se_connecter">
-<img src="src/choix6.jpeg" alt="">
+<img src="https://i.pinimg.com/736x/be/93/1b/be931b33e2eb94298174c9075e707f1b.jpg" alt="image de fruits et légumes">
 <div class="cover_box">
 <div class="form-box login">
-    <h2>Se connecter</h2>
+    <div class="marque">
+        <label for="" class="logo">AGRILINK</label>
+        <h2>Se connecter</h2>
+    </div>
+   
     <form action="#">
         <div class="input-box">
             <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
@@ -57,106 +44,22 @@
 
         <button type="submit" class="btn">Se connecter</button>
         <div class="login-register">
-            <p>Vous n'avez pas de compte ? <a href="#" class="register-link">Créer un compte</a></p>
+            <p>Vous n'avez pas de compte ? <a href="enregistrement.html" class="register-link">Créer un compte</a></p>
         </div>
     </form>
-</div>
 
-<!-- registration -->
-
-<div class="form-box register">
-    <h2>S'enregistrer</h2>
-    <form action="#">
-
-        <div class="input-box">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <input type="text" id="text" required title="text" placeholder="">
-            <label for="email">Nom utilisateur</label>
-        </div>
-
-        <div class="input-box">
-            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
-            <input type="email" id="email" required title="email" placeholder="">
-            <label for="email">Email</label>
-        </div>
-
-        <div class="input-box">
-            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-            <input type="password" id="password" required>
-            <label for="password">Mot de passe</label>
-        </div>
-
-        <div class="remenber-forgot">
-            <label for=""><input type="checkbox">Accepter toutes les conditions</label>
-        </div>
-
-        <button type="submit" class="btn">S'enregistrer</button>
-        <div class="login-register">
-            <p>Vous avez déjà un compte ? <a href="#" class="login-link">Se connecter</a></p>
-        </div>
-    </form>
 </div>
 
 </div>
 </main>
-<!-- footer -->
-<footer> 
-    <div class="premier">
-        
-        <!-- <div class="logo_nom">
-            <img src="SRC/Projet_Créateur_de_logo_1-removebg-preview.png" alt="">
-        </div> -->
-
-        <div class="deuxieme">
-            <div>
-                <h3>Contactez-nous</h3>
-                <p>Téléphone: 0787411325</p>
-                <p>Email:agrilink@gmail.com</p>
-                <p>Adresse: Rue des Marchés, Abidjan, Côte d'Ivoire</p>
-            </div>
-
-            <div>
-                <h3>Contactez-nous</h3>
-                <p>FAQ</p>
-                <p>Politique de retour</p>
-                <p>Suivi de commande</p>
-            </div>
-
-            <div>
-                <h3>Contactez-nous</h3>
-                <p>Conditions générales de vente</p>
-                <p>Politique de confidentialité</p>
-                <p>Droits d'auteur</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="info"> 
-        <div class="footer-section">
-            <!-- <h3>paiement avec </h3> -->
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEelSThIvlkqYJsFcIIkJpOxTkXF1R6Nj9qQ&s" alt="Wave" class="payment-logo">
-            <img src="https://play-lh.googleusercontent.com/nueqt3Av6smqfet6CfZbV_eil8-Ie0IH-rEeGwlAuR_BrvMpbGgOVt976SVnMtZWMEs" alt="Djamo" class="payment-logo">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOGvevFkT-gPnGlgXcKPmSkOJWzNolIXXhWA&s" alt="orange money" class="payment-logo">
-            <img src="https://www.pigroup360.com/wp-content/uploads/2020/09/mtn-mobile-money-logo.jpg" alt="MTN money" class="payment-logo">
-        </div>
-
-        <div class="logo">
-            <a href="#" alt="Notre compte twitter" title="Joingnez-nous sur twitter"><span><i class="fa-brands fa-square-x-twitter"></i></span></a>
-            <a href="#" alt="Notre compte instagram" title="Joingnez-nous sur instagram"><span><i class="fa-brands fa-square-instagram"></i></span></a>
-            <a href="#" alt="Notre compte facebook" title="Joingnez-nous sur facebook"><span><i class="fa-brands fa-facebook"></i></span></a>
-            <a href="#" alt="Notre compte whatsapp" title="Joingnez-nous sur whatsapp"><span><i class="fa-brands fa-square-whatsapp"></i></span></a>
-        </div>
-    </div>   
-
-    <p class="copy">&copy; Agrilink 2025</p>
-
-</footer>
 
 
-  <script src="src/login.js"></script>
+
+  <script src="SRC/login.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  
+  <main></main>
+  <footer></footer>
 </body>
 </html>
