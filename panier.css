@@ -483,10 +483,9 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
 
     @media screen and (max-width: 768px) {
         .container {
-            width: 90%;
+            width: 100%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 10px;
             margin-top: 70px;
         }
         .sidebar {
