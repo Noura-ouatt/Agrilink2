@@ -597,5 +597,32 @@ footer{  background:linear-gradient(#efece7,#4a6e43 );
             color: #fff;
         }
        
+        .premier {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+             
+        }
+        .deuxieme{
+            display: flex;
+            flex-direction: column;
+        gap: 10px;
         
+        }
+        
+        footer p {
+            color: rgb(244, 243, 243);
+            line-height: 30px;
+            font-size: 12px;
+        }
+        
+        .info {
+            display: flex;
+            flex-direction: column-reverse;
+        gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 20px;}
     }
