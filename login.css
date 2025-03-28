@@ -71,12 +71,6 @@ transform: scale(1);
     transition: transform .50s ease;
 }
 
-.cover_box .form-box.register {
-    position: absolute;
-    transition: none;
-    transform: translateX(400px);
-}
-
 
 /* .cover_box .icon-close {
     position: absolute;
